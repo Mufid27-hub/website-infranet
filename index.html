@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infranet - Portal Reservasi Infrastruktur Jaringan</title>
+    <meta name="description" content="Portal resmi reservasi jadwal instalasi, audit, dan maintenance perangkat infrastruktur jaringan & server Infranet Solusi Teknologi." />
+    <meta property="og:title" content="Infranet - Portal Reservasi Infrastruktur Jaringan" />
+    <meta property="og:description" content="Portal resmi reservasi jadwal instalasi, audit, dan maintenance perangkat infrastruktur jaringan & server Infranet Solusi Teknologi." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Standalone CSS (Pure & Native) -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Noscript Warning -->
+    <noscript>
+      <div style="padding: 16px; background-color: #fef2f2; border-bottom: 2px solid #ef4444; color: #991b1b; text-align: center; font-size: 14px;">
+        <strong>Perhatian:</strong> JavaScript di peramban Anda nonaktif. Aktifkan JavaScript untuk menggunakan fitur pencarian, filter katalog, validasi tanggal kalender, dan pembuatan tautan draf WhatsApp.
+      </div>
+    </noscript>
+
+    <!-- Emergency Hotline Banner -->
+    <aside class="emergency-banner" aria-label="Informasi Penanganan Insiden Kritis">
+      <div class="container emergency-content">
+        <span>
+          <strong>Pemberitahuan Insiden Kritis:</strong> Formulir ini untuk instalasi & pemeliharaan terjadwal. Jika jaringan mengalami <em>downtime darurat total</em>, segera hubungi tim respons teknis:
+        </span>
+        <a href="tel:+6281299887711" class="hotline-link">Hotline 24 Jam: +62 812-9988-7711</a>
+      </div>
+    </aside>
+
+    <!-- Header Navigation -->
+    <header class="site-header">
+      <div class="container header-container">
+        <!-- Zone 1: Single text element wordmark -->
+        <a href="#" class="brand-logo">
+          <span class="brand-dot" aria-hidden="true"></span>
+          <span>Infranet Solusi Teknologi</span>
+        </a>
+
+        <!-- Zone 2: 4-5 single-line clean text links -->
+        <nav class="main-nav" aria-label="Navigasi Utama">
+          <a href="#katalog" class="nav-link">Katalog Perangkat</a>
+          <a href="#alur-sop" class="nav-link">Alur SOP</a>
+          <a href="#reservasi" class="nav-link">Reservasi Jadwal</a>
+          <a href="#faq" class="nav-link">FAQ & Panduan</a>
+          <a href="#kontak" class="nav-link">Kontak & Lokasi</a>
+        </nav>
+
+        <!-- Zone 3: 1 primary CTA button -->
+        <a href="#reservasi" class="btn-header-cta">
+          Ajukan Jadwal
+        </a>
+
+        <!-- Mobile hamburger toggle button -->
+        <button type="button" id="mobile-menu-btn" class="btn-mobile-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Drawer -->
+      <div id="mobile-menu" class="mobile-menu-drawer hidden" aria-label="Menu Navigasi Mobile">
+        <a href="#katalog" class="mobile-nav-link">Katalog Perangkat (20)</a>
+        <a href="#alur-sop" class="mobile-nav-link">Alur SOP Reservasi</a>
+        <a href="#reservasi" class="mobile-nav-link">Reservasi Jadwal</a>
+        <a href="#faq" class="mobile-nav-link">FAQ & Panduan</a>
+        <a href="#kontak" class="mobile-nav-link">Kontak & Lokasi</a>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero Section -->
+      <section class="hero-section" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-text-col">
+            <div class="hero-kicker">Standard Operating Procedure · Infrastruktur Jaringan</div>
+            <h1 class="hero-title">Reservasi Layanan Instalasi, Audit, dan Maintenance Jaringan</h1>
+            <p class="hero-lead">
+              Pilih perangkat jaringan yang dibutuhkan dari 20 unit terverifikasi, lengkapi data spesifikasi sistem, dan ajukan preferensi jadwal pengerjaan teknis on-site langsung ke tim engineer Infranet Solusi Teknologi.
+            </p>
+            <div class="hero-sop-box">
+              <strong>Aturan SOP & Status Pengajuan:</strong> Formulir reservasi di website ini berstatus <em>Permintaan Jadwal (Belum Terkonfirmasi)</em>. Draf pesanan diteruskan ke WhatsApp untuk peninjauan teknis dan konfirmasi ketersediaan slot resmi oleh engineer.
+            </div>
+            <div class="hero-actions">
+              <a href="#reservasi" class="btn-primary">Mulai Formulir Reservasi</a>
+              <a href="#katalog" class="btn-secondary">Lihat Katalog Perangkat</a>
+            </div>
+          </div>
+
+          <!-- Hero Snapshot Card -->
+          <div class="hero-card-col">
+            <div class="hero-card">
+              <div class="hero-card-header">
+                <div>
+                  <div class="hero-card-badge">Portal Layanan Resmi</div>
+                  <div class="hero-card-title">Infranet Operation Center</div>
+                </div>
+              </div>
+              <ul class="hero-card-list">
+                <li>
+                  <strong>20 Unit Katalog Fisik:</strong>
+                  Router, Firewall PA-3410, Switch PoE+, WiFi 6, ODF, SFP+, Patch Panel, PDU, hingga Server Rack.
+                </li>
+                <li>
+                  <strong>Zero Data Persistence:</strong>
+                  Privasi terjamin. Data kontak dan topologi tidak disimpan ke server atau browser storage.
+                </li>
+                <li>
+                  <strong>Verifikasi Jadwal Manual:</strong>
+                  Pemohon memilih usulan waktu, engineer memastikan kesiapan teknisi sebelum konfirmasi resmi.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Catalog Section -->
+      <section class="catalog-section" id="katalog">
+        <div class="container">
+          <div class="section-kicker">Katalog Terverifikasi (20 Unit)</div>
+          <h2 class="section-title">Peralatan & Modul Infrastruktur Jaringan</h2>
+          <p class="section-subtitle">
+            Pilih perangkat yang relevan dengan kebutuhan instalasi atau audit sistem Anda. Dilengkapi spesifikasi teknis, estimasi durasi pengerjaan, dan estimasi tarif jasa resmi.
+          </p>
+
+          <!-- Search & Filter Controls -->
+          <div class="filter-box">
+            <div class="search-row">
+              <input
+                type="search"
+                id="device-search"
+                class="search-input"
+                placeholder="Cari router, firewall, switch, fiber optic, tester, kabel..."
+                aria-label="Cari perangkat jaringan"
+              />
+              <button type="button" id="btn-reset-filters" class="btn-reset-filters hidden">
+                Reset Filter
+              </button>
+            </div>
+            <!-- Category Tabs -->
+            <div class="category-tabs" id="category-tabs" role="tablist">
+              <!-- Dynamically populated by js/app.js -->
+            </div>
+          </div>
+
+          <!-- Counter -->
+          <div class="results-counter" id="catalog-counter">
+            Memuat perangkat...
+          </div>
+
+          <!-- Catalog Grid -->
+          <div class="device-grid" id="catalog-grid">
+            <!-- Dynamically populated by js/app.js -->
+          </div>
+
+          <!-- Empty State (Hidden by default) -->
+          <div class="empty-state hidden" id="catalog-empty-state">
+            <h3 class="empty-title">Perangkat Tidak Ditemukan</h3>
+            <p class="empty-desc">Tidak ada perangkat yang cocok dengan kata kunci atau kategori yang dipilih.</p>
+            <button type="button" id="btn-reset-empty" class="btn-primary">
+              Tampilkan Semua Perangkat
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOP Workflow Section -->
+      <section class="workflow-section" id="alur-sop">
+        <div class="container">
+          <div class="section-kicker">Prosedur Operasional Standar</div>
+          <h2 class="section-title">5 Langkah Alur Reservasi Infranet</h2>
+          <p class="section-subtitle">
+            SOP terstruktur agar pekerjaan instalasi dan audit di lokasi klien berjalan presisi, aman, dan tepat waktu.
+          </p>
+
+          <div class="steps-grid">
+            <div class="step-card">
+              <span class="step-num">01</span>
+              <h3 class="step-title">Pilih Perangkat</h3>
+              <p class="step-desc">Tentukan perangkat dan layanan teknis yang dibutuhkan dari katalog 20 unit terverifikasi.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">02</span>
+              <h3 class="step-title">Isi Data Sistem</h3>
+              <p class="step-desc">Lengkapi identitas pemohon, nomor kontak aktif, nama sistem, dan lokasi fisik pekerjaan.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">03</span>
+              <h3 class="step-title">Usulkan Waktu</h3>
+              <p class="step-desc">Pilih tanggal (tidak boleh di masa lampau) dan sesi waktu kunjungan yang diinginkan.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">04</span>
+              <h3 class="step-title">Tinjau Ringkasan</h3>
+              <p class="step-desc">Periksa ringkasan draf berlabel "Permintaan Jadwal (Belum Dikonfirmasi)" sebelum membuka WhatsApp.</p>
+            </div>
+            <div class="step-card">
+              <span class="step-num">05</span>
+              <h3 class="step-title">Kirim WhatsApp</h3>
+              <p class="step-desc">Buka WhatsApp, tekan kirim sendiri. Engineer Infranet akan memverifikasi kesiapan dan mengonfirmasi jadwal resmi.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reservation Form Section -->
+      <section class="reservation-section" id="reservasi">
+        <div class="container">
+          <div class="form-wrapper">
+            <div style="text-align: center; margin-bottom: 2rem;">
+              <div class="section-kicker">Formulir Permintaan Jadwal</div>
+              <h2 class="section-title">Pengajuan Jadwal On-Site</h2>
+              <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+                Data formulir hanya diproses di browser Anda dan dirangkai menjadi draf WhatsApp terenkripsi.
+              </p>
+            </div>
+
+            <!-- Selected Device Banner -->
+            <div class="selected-banner">
+              <div class="banner-left">
+                <img id="selected-device-img" class="banner-img" src="" alt="Perangkat Terpilih" />
+                <div>
+                  <div id="selected-device-name" class="banner-title">Memuat perangkat...</div>
+                  <div id="selected-device-meta" class="banner-meta">Pilih dari katalog di atas</div>
+                </div>
+              </div>
+              <a href="#katalog" class="btn-secondary" style="font-size: 0.75rem; padding: 0.45rem 0.85rem;">
+                Ganti Perangkat
+              </a>
+            </div>
+
+            <!-- The Main Form -->
+            <form id="booking-form" class="main-form-box" novalidate>
+              <!-- Group 1: Device Selection -->
+              <div>
+                <h3 class="form-group-title">1. Perangkat & Layanan yang Dibutuhkan *</h3>
+                <div class="form-field">
+                  <label for="serviceId" class="field-label">Pilih Perangkat Infrastruktur *</label>
+                  <select id="serviceId" class="input-select">
+                    <!-- Populated by js/form.js -->
+                  </select>
+                  <p id="serviceId-error" class="error-message hidden"></p>
+                </div>
+              </div>
+
+              <!-- Group 2: Client Info -->
+              <div>
+                <h3 class="form-group-title">2. Identitas Klien / Pemohon *</h3>
+                <div class="form-grid two-cols">
+                  <div class="form-field">
+                    <label for="clientName" class="field-label">Nama Pemohon / Instansi / Perusahaan *</label>
+                    <input type="text" id="clientName" class="input-text" placeholder="Contoh: PT Cyber Nusantara / Bpk. Rahmat" />
+                    <p id="clientName-error" class="error-message hidden"></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="clientContact" class="field-label">Nomor WhatsApp / Telepon Aktif *</label>
+                    <input type="tel" id="clientContact" class="input-text" placeholder="Contoh: 088215268278" />
+                    <p id="clientContact-error" class="error-message hidden"></p>
+                  </div>
+                  <div class="form-field full-col">
+                    <label for="clientEmail" class="field-label">Alamat Email (Opsional)</label>
+                    <input type="email" id="clientEmail" class="input-text" placeholder="it-support@perusahaan.co.id" />
+                  </div>
+                </div>
+              </div>
+
+              <!-- Group 3: System Environment & Location -->
+              <div>
+                <h3 class="form-group-title">3. Lingkungan Sistem & Lokasi Instalasi *</h3>
+                <div class="form-grid two-cols">
+                  <div class="form-field">
+                    <label for="systemName" class="field-label">Nama Sistem / Label Jaringan *</label>
+                    <input type="text" id="systemName" class="input-text" placeholder="Contoh: LAN Ruang Server Lt. 2" />
+                    <p id="systemName-error" class="error-message hidden"></p>
+                  </div>
+                  <div class="form-field">
+                    <label for="deviceType" class="field-label">Tipe Lingkungan Infrastruktur *</label>
+                    <select id="deviceType" class="input-select">
+                      <!-- Populated by js/form.js -->
+                    </select>
+                  </div>
+                  <div class="form-field full-col">
+                    <label for="installationLocation" class="field-label">Alamat Lengkap Lokasi Pengerjaan *</label>
+                    <textarea id="installationLocation" class="input-textarea" rows="2" placeholder="Gedung, lantai, nomor ruangan, jalan, kota..."></textarea>
+                    <p id="installationLocation-error" class="error-message hidden"></p>
+                  </div>
+                  <div class="form-field full-col">
+                    <label for="optionalNotes" class="field-label">Catatan Kebutuhan Khusus / Topologi (Opsional)</label>
+                    <textarea id="optionalNotes" class="input-textarea" rows="2" placeholder="Contoh: Penarikan kabel 50m, konfigurasi VLAN ID, atau integrasi router eksisting..."></textarea>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Group 4: Schedule Preferences -->
+              <div>
+                <h3 class="form-group-title">4. Preferensi Jadwal Kunjungan Teknisi *</h3>
+                <div class="form-grid two-cols">
+                  <div class="form-field">
+                    <label for="preferredDate" class="field-label">Tanggal Kunjungan yang Diharapkan *</label>
+                    <input type="date" id="preferredDate" class="input-text" />
+                    <p id="preferredDate-error" class="error-message hidden"></p>
+                  </div>
+                  <div class="form-field">
+                    <label class="field-label">Preferensi Sesi Waktu Kunjungan *</label>
+                    <div class="time-slot-list">
+                      <label class="time-slot-card">
+                        <input type="radio" name="preferredTime" value="PAGI" checked />
+                        <div>
+                          <div class="slot-label">Sesi Pagi (09:00 - 12:00 WIB)</div>
+                          <div class="slot-desc">Cocok untuk survei awal / instalasi modular</div>
+                        </div>
+                      </label>
+                      <label class="time-slot-card">
+                        <input type="radio" name="preferredTime" value="SIANG" />
+                        <div>
+                          <div class="slot-label">Sesi Siang (13:00 - 15:30 WIB)</div>
+                          <div class="slot-desc">Cocok untuk konfigurasi firewall & switch core</div>
+                        </div>
+                      </label>
+                      <label class="time-slot-card">
+                        <input type="radio" name="preferredTime" value="SORE" />
+                        <div>
+                          <div class="slot-label">Sesi Sore (15:30 - 17:30 WIB)</div>
+                          <div class="slot-desc">Cocok untuk uji link, sertifikasi kabel, & handover</div>
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div style="margin-top: 1rem; font-size: 0.75rem; color: #92400e; background: #fef3c7; padding: 0.75rem; border-radius: 8px;">
+                  *Sesi waktu yang dipilih merupakan usulan pemohon. Jadwal resmi akan diverifikasi oleh teknisi Infranet lewat WhatsApp.
+                </div>
+              </div>
+
+              <!-- Form Buttons -->
+              <div class="form-footer-actions">
+                <button type="button" id="btn-reset-form" class="btn-reset">Kosongkan Formulir</button>
+                <button type="submit" id="btn-review-draft" class="btn-primary">Tinjau Ringkasan Permintaan</button>
+              </div>
+            </form>
+
+            <!-- REVIEW SUMMARY CARD (Hidden until user clicks Review) -->
+            <div id="review-summary-container" class="review-summary-card hidden">
+              <div class="summary-header">
+                <div>
+                  <div style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.9;">Ringkasan Draf Formulir</div>
+                  <h3 style="font-size: 1.125rem; font-weight: 800;">Permintaan Jadwal (Belum Dikonfirmasi)</h3>
+                </div>
+                <span class="summary-status-tag">Menunggu Konfirmasi Teknisi</span>
+              </div>
+
+              <div class="summary-body">
+                <div class="summary-notice">
+                  <strong>Ketentuan SOP:</strong> Ini adalah draf permintaan jadwal instalasi/maintenance, bukan konfirmasi reservasi otomatis. Data di bawah ini akan dimuat ke obrolan WhatsApp resmi Infranet (+62 882-1526-8278). Anda akan menekan tombol kirim sendiri di aplikasi WhatsApp Anda.
+                </div>
+
+                <div class="summary-grid">
+                  <div class="summary-box">
+                    <div class="summary-box-title">Rincian Perangkat & Usulan Waktu</div>
+                    <div class="summary-item">
+                      <label>Perangkat:</label>
+                      <strong id="summary-device-name">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <label>Kategori & Estimasi Durasi:</label>
+                      <span id="summary-device-meta">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <label>Estimasi Tarif Jasa:</label>
+                      <strong id="summary-device-price" style="font-family: var(--font-mono);">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <label>Usulan Tanggal & Sesi:</label>
+                      <strong id="summary-date-time" style="color: var(--color-primary);">-</strong>
+                    </div>
+                  </div>
+
+                  <div class="summary-box">
+                    <div class="summary-box-title">Identitas Pemohon & Lokasi</div>
+                    <div class="summary-item">
+                      <label>Nama Pemohon / Instansi:</label>
+                      <strong id="summary-client-name">-</strong>
+                    </div>
+                    <div class="summary-item">
+                      <label>Kontak WhatsApp / Telp:</label>
+                      <span id="summary-client-contact" style="font-family: var(--font-mono);">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <label>Nama Sistem & Lingkungan:</label>
+                      <span id="summary-system-env">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <label>Alamat Pengerjaan:</label>
+                      <span id="summary-location">-</span>
+                    </div>
+                    <div class="summary-item">
+                      <label>Catatan Kebutuhan Khusus:</label>
+                      <span id="summary-notes">-</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="wa-error-alert" class="error-message hidden" style="padding: 0.75rem; background: var(--color-red-bg); border-radius: 8px;"></div>
+
+                <div class="summary-actions">
+                  <button type="button" id="btn-copy-draft" class="btn-secondary">
+                    Salin Teks Draf
+                  </button>
+                  <button type="button" id="btn-open-wa" class="btn-wa-submit">
+                    Buka WhatsApp Infranet Sekarang ↗
+                  </button>
+                </div>
+                <div id="copy-feedback" class="hidden" style="font-size: 0.75rem; color: #16a34a; font-weight: 600;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section" id="faq">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 2rem;">
+            <div class="section-kicker">Panduan & Tanya Jawab</div>
+            <h2 class="section-title">Frequently Asked Questions (FAQ)</h2>
+            <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
+              Penjelasan mengenai ketentuan SOP, privasi data, persiapan lokasi, dan verifikasi ketersediaan jadwal.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary class="faq-summary">Apakah pengajuan jadwal melalui website ini langsung terkonfirmasi otomatis?</summary>
+              <div class="faq-answer">
+                Tidak. Sesuai Prosedur Operasional Standar (SOP) vendor IT, pengajuan melalui website ini berstatus "Permintaan Jadwal" (Draf). Setelah Anda mengirimkan rincian kebutuhan melalui WhatsApp, tim teknisi & engineer Infranet akan memeriksa kelayakan lokasi, ketersediaan slot waktu, serta spesifikasi perangkat sebelum mengonfirmasi jadwal resmi secara manual.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">Bagaimana prosedur penanganan keadaan darurat jaringan (downtime kritis)?</summary>
+              <div class="faq-answer">
+                Website ini bukan kanal penanganan insiden darurat realtime. Jika sistem atau jaringan kantor Anda mengalami downtime total, link putus darurat, atau kegagalan firewall kritis, JANGAN menunggu formulir ini. Segera hubungi Hotline Emergency Call 24 Jam kami di nomor telepon +62 812-9988-7711 untuk penanganan on-site segera oleh tim respons darurat.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">Mengapa tarif yang tercantum berstatus estimasi?</summary>
+              <div class="faq-answer">
+                Biaya yang ditampilkan merupakan estimasi standar jasa teknis profesional. Total biaya final dapat disesuaikan berdasarkan kondisi riil di lapangan, seperti panjang tarikan kabel, ketinggian instalasi, kebutuhan material bantu (conduit/tray), atau kompleksitas konfigurasi topologi jaringan Anda yang akan diverifikasi saat survei.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">Apakah data kontak dan topologi jaringan saya aman di website ini?</summary>
+              <div class="faq-answer">
+                Sangat aman. Website ini dibangun dengan arsitektur privasi ketat (Zero-Persistence). Kami tidak menyimpan nama, nomor telepon, alamat, maupun catatan topologi jaringan Anda ke localStorage browser ataupun server kami. Data formulir hanya dirangkai menjadi draf teks yang Anda sendiri yang akan menekan tombol kirim di WhatsApp.
+              </div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-summary">Apa saja persiapan yang harus disiapkan klien sebelum tim engineer datang?</summary>
+              <div class="faq-answer">
+                Klien dimohon memastikan: (1) Akses perizinan masuk gedung/ruang server (working permit jika ada), (2) Ketersediaan sumber daya listrik (stop kontak PLN & grounding memadai), (3) Kredensial login router/firewall/switch eksisting jika diperlukan integrasi, dan (4) Person in Charge (PIC) teknis yang mendampingi di lokasi.
+              </div>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="kontak">
+        <div class="container">
+          <div class="section-kicker">Identitas Resmi & Lokasi Kantor</div>
+          <h2 class="section-title">Hubungi Vendor IT & Pusat Operasional</h2>
+          <p class="section-subtitle">
+            Data kontak dan alamat kantor pusat Infranet Solusi Teknologi yang telah terverifikasi secara resmi untuk konsultasi teknis, survei lokasi, dan administrasi.
+          </p>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <h3 class="contact-card-title">Kantor & Workshop</h3>
+              <p class="contact-card-desc">
+                Gedung Cyber Tech Hub Lt. 3, Jl. H. R. Rasuna Said Kav. 42, Kuningan Barat<br />
+                Jakarta Selatan, DKI Jakarta 12710
+              </p>
+              <a href="https://maps.google.com/?q=Cyber+Building+Jakarta" target="_blank" rel="noopener noreferrer" class="contact-card-link">
+                Petunjuk Arah Google Maps ↗
+              </a>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title">Jam Operasional</h3>
+              <p class="contact-card-desc">
+                Senin - Jumat: 08:30 - 17:30 WIB<br />
+                Sabtu: 09:00 - 14:00 WIB<br />
+                Minggu & Libur Nasional: Tutup (Hanya Layanan Emergency Call)
+              </p>
+              <div style="font-size: 0.75rem; color: var(--color-primary); font-weight: 600; margin-top: auto;">
+                Respon WhatsApp: Max 30 Menit pada Jam Operasional
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <h3 class="contact-card-title">Kontak Resmi</h3>
+              <p class="contact-card-desc">
+                <strong>WhatsApp Publik:</strong> <a href="https://wa.me/6288215268278" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary); font-weight: 700;">+62 882-1526-8278</a><br />
+                <strong>Hotline Darurat 24 Jam:</strong> <a href="tel:+6281299887711" style="color: #92400e; font-weight: 700;">+62 812-9988-7711</a><br />
+                <strong>Email:</strong> operasional@infranet-solusi.id
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <div class="footer-brand">Infranet Solusi Teknologi</div>
+            <p style="margin-top: 0.35rem; font-size: 0.75rem;">Solusi Terpadu Infrastruktur Jaringan, Server & Data Cabling Enterprise</p>
+          </div>
+          <a href="#" style="color: #cbd5e1; text-decoration: none; font-size: 0.75rem;">↑ Kembali ke Atas</a>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 Infranet Solusi Teknologi. Seluruh hak cipta dilindungi undang-undang.</div>
+          <div style="display: flex; gap: 0.75rem;">
+            <span>Standar TIA/EIA-568-C.2</span>
+            <span>·</span>
+            <span>IEEE 802.3 Ethernet</span>
+            <span>·</span>
+            <span>Zero-Persistence Privacy</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Native Technical Specs Modal -->
+    <div id="device-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-device-title">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div>
+            <div id="modal-device-category" class="modal-category">Kategori</div>
+            <h2 id="modal-device-title" class="modal-title">Nama Perangkat</h2>
+          </div>
+          <button type="button" id="modal-close-btn" class="btn-modal-close" aria-label="Tutup jendela">✕</button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-img-box">
+            <img id="modal-device-img" src="" alt="Perangkat" />
+          </div>
+          <div>
+            <div style="font-size: 0.6875rem; text-transform: uppercase; color: var(--color-text-light); font-weight: 700;">Estimasi Biaya Jasa</div>
+            <div id="modal-device-price" style="font-size: 1.25rem; font-weight: 800; font-family: var(--font-mono); color: var(--color-text-main);">-</div>
+            <div style="font-size: 0.75rem; color: var(--color-text-light); margin-top: 0.2rem;">*Estimasi dapat disesuaikan hasil survei on-site</div>
+          </div>
+          <div style="font-size: 0.8125rem; color: var(--color-text-muted);">
+            Estimasi Durasi: <strong id="modal-device-duration">-</strong>
+          </div>
+          <div style="background: var(--color-primary-light); color: var(--color-primary-hover); padding: 0.75rem 1rem; border-radius: 8px; font-size: 0.75rem;">
+            <strong>Rekomendasi Penerapan:</strong>
+            <span id="modal-device-use block">-</span>
+          </div>
+          <div>
+            <h3 style="font-size: 0.875rem; font-weight: 700; margin-bottom: 0.35rem;">Deskripsi Perangkat</h3>
+            <p id="modal-device-desc" style="font-size: 0.8125rem; color: var(--color-text-muted); line-height: 1.5;">-</p>
+          </div>
+          <div>
+            <h3 style="font-size: 0.875rem; font-weight: 700; margin-bottom: 0.35rem;">Spesifikasi Teknis</h3>
+            <ul id="modal-device-specs" class="modal-specs-list">
+              <!-- Populated dynamically -->
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-secondary" onclick="document.getElementById('device-modal').classList.add('hidden'); document.body.style.overflow='unset';">
+            Tutup
+          </button>
+          <button type="button" id="modal-select-btn" class="btn-primary">
+            Pilih Perangkat Ini untuk Reservasi
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Native Application Script (Pure ES Module) -->
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>

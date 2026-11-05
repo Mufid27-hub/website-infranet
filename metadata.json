@@ -1,0 +1,6 @@
+{
+  "name": "Infranet - Portal Reservasi Infrastruktur Jaringan",
+  "description": "Portal resmi reservasi jadwal instalasi, audit, dan maintenance perangkat infrastruktur jaringan & server Infranet Solusi Teknologi.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
